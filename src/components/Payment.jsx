@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Header from './Header';
+import '../styles/login.css'
 
 function Payment() {
 
@@ -8,6 +9,7 @@ function Payment() {
     const [name, setName] = useState("");
     const [mobile, setMobile] = useState("")
     const [address, setAddress] = useState("");
+    const [pincode, setPincode] = useState("");
 const handlePayment = () => {
     if(!name){
         return alert("Name is rewuired")
@@ -46,8 +48,10 @@ const handlePayment = () => {
                 <input type="number" onChange={e => setMobile(e.target.value)} value={mobile}></input><br></br>
                 <label htmlFor='name'>Address</label>
                 <input type="text" onChange={e => setAddress(e.target.value)} value={address}></input><br></br>
+                <label htmlFor='name'>Pincode</label>
+                <input type="number" onChange={e => setPincode(e.target.value)} value={pincode}></input><br></br>
                 <label htmlFor='name'>Payment Method</label>
-                <select>
+                <select className='select'>
                     <option>Cash on Delivery</option>
                     <option>Paytm</option>
                     <option>Credit Card</option>

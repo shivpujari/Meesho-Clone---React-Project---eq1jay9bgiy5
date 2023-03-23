@@ -73,3 +73,9 @@ body {
 .userName {
     font-size: 15px;
 }
+.cartButtton{
+    height: 40px;
+    width: 8%;
+    border: 0;
+    background-color: #fff;
+}
