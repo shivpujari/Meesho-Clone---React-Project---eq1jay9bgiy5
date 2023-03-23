@@ -1,15 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.containsTwoDiv{
+
+.containsTwoDiv {
     display: flex;
     height: 100vh;
     width: 100%;
-    
+
 }
-.imgDiv{
+
+.imgDiv {
     height: 500px;
     width: 450px;
     display: flex;
@@ -19,11 +21,13 @@
     justify-content: center;
     margin: 20px 10px 0px 20px;
 }
-.imgTwo{
+
+.imgTwo {
     height: 400px;
     width: 400px;
 }
-.imgDiv button{
+
+.imgDiv button {
     height: 50px;
     width: 90%;
     background-color: rgb(244, 51, 151);
@@ -32,7 +36,7 @@
     margin: 10px 0px 0px 20px;
 }
 
-.allbtn{
+.allbtn {
     /* display: flex; */
     height: 400px;
     width: 50%;
@@ -40,26 +44,31 @@
     border: 1px solid black;
     margin: 23px 10px 0px 20px;
 }
-.allbtn h4{
+
+.allbtn h4 {
     margin: 10px 0px 0px 20px;
 }
-.allbtn h5{
+
+.allbtn h5 {
     margin: 10px 0px 0px 20px;
 }
-.allbtn .buyNOw{
+
+.allbtn .buyNOw {
     height: 35px;
     width: 70px;
     background-color: rgb(38, 193, 38);
-   
+
     border: 0;
     border-radius: 5px;
     margin: 5px 20px 0px 20px;
 }
-.allbtn .buyNOw a{
+
+.allbtn .buyNOw a {
     text-decoration: none;
     color: white;
 }
-.deleteIems{
+
+.deleteIems {
     height: 35px;
     width: 12%;
     background-color: rgb(18, 188, 18);
@@ -67,7 +76,8 @@
     border: 0;
     border-radius: 5px;
 }
-.ratingBtn{
+
+.ratingBtn {
     height: 25px;
     width: 6%;
     background-color: rgb(18, 188, 18);
@@ -75,12 +85,14 @@
     border: 0;
     border-radius: 5px;
     margin: 10px 20px 10px 20px;
-    
+
 }
-.itemDesc{
+
+.itemDesc {
     margin: 10px 20px 10px 20px;
-     
+
 }
-.itemDesc span{
+
+.itemDesc span {
     font-weight: 600;
 }

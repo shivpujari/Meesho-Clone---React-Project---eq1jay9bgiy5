@@ -19,11 +19,10 @@ function Cart() {
         }
     }, [])
 
-    const removeItems=(index)=>{
-        console.log(index,"removeItems")
-    let tempArr = [...cartData.dataApp];
-     tempArr.splice(index, 1);
-     cartData.setDataApp([...tempArr]); 
+    const removeItems = (index) => {
+        let tempArr = [...cartData.dataApp];
+        tempArr.splice(index, 1);
+        cartData.setDataApp([...tempArr]);
     }
 
     return (
@@ -41,7 +40,7 @@ function Cart() {
                                 <h5>Rs. {item.price}</h5>
                                 <button className='ratingBtn'><i className="fa fa-star-half-o"></i>{item.rating.rate}</button>
                                 <p className='itemDesc'><span>About : </span>{item.description}</p><br></br>
-                               
+
                                 <button className='buyNOw'><Link to="/payment">Buy Now</Link></button>
                                 <button className='deleteIems' onClick={() => removeItems(index)}>Remove<i class="fa fa-trash"></i></button>
                             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/header.css'
 import { Link } from 'react-router-dom'
 import { DataAppContext } from './DataApp'
@@ -10,7 +10,7 @@ function Header() {
 
   const logoutBtn = () => {
     localStorage.removeItem("loginStatus")
-    localStorage.removeItem("name",name)
+    localStorage.removeItem("name", name)
   }
 
   return (
@@ -22,9 +22,9 @@ function Header() {
         <a href=''>Become a Supplier</a>
         <i className="fa fa-user profileIcon"><p className='profilepara'>Profile</p><p className='userName'>{name}</p></i>
         <button className='cartButtton'>
-        <i className="fa fa-shopping-cart cartIcon"></i>
+          <i className="fa fa-shopping-cart cartIcon"></i>
           <Link className='cartpara' to="/cartdisplay">Cart{cartData.dataApp.length}</Link></button>
-            <button className='logoutBtn' onClick={logoutBtn}>Logout</button>
+        <button className='logoutBtn' onClick={logoutBtn}>Logout</button>
       </nav>
     </div>
   )

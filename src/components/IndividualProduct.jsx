@@ -12,26 +12,18 @@ function IndividualProduct() {
 
     const cartData = useContext(DataAppContext);
 
-
     const navigate = useNavigate();
     const fetchId = useParams();
     const [cart, setCart] = useState([]);
 
-    console.log(fetchId, "fetchid")
-
     const getDatas = async (url) => {
         try {
-            console.log(url)
             const res = await fetch(url);
             const data = await res.json();
-            console.log(data, "data");
             let temp = data.filter((item) => {
-                console.log(item.id)
-                console.log(parseInt(fetchId.id), "parseint")
                 return item.id === parseInt(fetchId.id)
             })
             setCart(temp)
-            console.log(temp, "temp")
         } catch (error) {
             console.log(error)
         }
@@ -46,11 +38,8 @@ function IndividualProduct() {
     }, [])
 
     const cartAdded = (item) => {
-        console.log(cartData, "cartdata")
         cartData.setDataApp([...cartData.dataApp, item])
-        console.log(cartData.dataApp, "cartAdded")
     }
-
 
     return (
         <div>
