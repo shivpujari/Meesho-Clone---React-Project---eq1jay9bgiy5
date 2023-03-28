@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import '../styles/login.css'
 
 function NewUser() {
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ alert("Registered successfully")
 
   return (
     <div>
-    <nav className="navabr">
+    <nav className="navbar">
     <h1>meesho</h1>
     <input type="text"  placeholder=' Try Saree, Kurti or Search by Product Code '/>
    <a href=''>Download App</a> 

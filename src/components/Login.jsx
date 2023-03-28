@@ -63,7 +63,7 @@ const Signin = () => {
   return (
 
     <div>
-      <nav className="navabr">
+      <nav className="navbar">
         <h1>meesho</h1>
         <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
         <a href=''>Download App</a>
