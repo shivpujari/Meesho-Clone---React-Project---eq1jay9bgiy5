@@ -38,7 +38,6 @@ function Products() {
       navigate("/login")
     }
     cartData.setDataApp([...cartData.dataApp, item])
-
   }
 
   return (
