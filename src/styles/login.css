@@ -3,6 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    border: 1px solid grey;
+}
+.navbar h1{
+    font-size: 40px;
+    color: rgb(244, 51, 151);
+    margin: 15px 0px 0px 110px;
+}
+.navbar input{
+    height: 47px;
+    width: 30%;
+    margin: 16px 0px 0px 16px;
+}
+.navbar a {
+    color: black;
+    margin: 28px 10px 0px 28px;
+    text-decoration: none;
+}
 
 .formDiv {
     height: 420px;
