@@ -15,10 +15,7 @@
     margin: 15px 0px 0px 110px;
 
 }
-.navIndividual a p{
-    display: none;
-   
-}
+
 .navIndividual input {
     height: 47px;
     width: 30%;
@@ -161,9 +158,15 @@
         width: 40%;
         margin: 20px 0px 0px 9px;
      }
+     .navIndividual a{
+        display: none;
+     }
+     .navIndividual  .crtpra{
+        display: block;
+     }
      .profilIc{
         font-size: 20px;
-        margin: 20px 0px 0px -50px;
+        margin: 20px 0px 0px 10px;
      }
      .crtIc{
         font-size: 22px;
