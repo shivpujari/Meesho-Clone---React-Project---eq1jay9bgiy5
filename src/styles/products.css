@@ -98,3 +98,14 @@
         margin-left: 190px;
     }
 }
+@media only screen and (max-width: 500px) {
+    .productsContains{
+        margin-left: 75px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .productsContains{
+        margin-left: 140px;
+    }
+}
