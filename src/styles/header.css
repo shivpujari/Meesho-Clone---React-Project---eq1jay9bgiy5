@@ -87,7 +87,7 @@ body {
     margin: 15px 0px 0px 30px;
 
     }
-    .navabr a{
+    .navabr a p{
         display: none;
     }
     .navabr input{
@@ -98,7 +98,7 @@ body {
     }
     .profileIcon{
         font-size: 23px;
-        margin: 15px 0px 10px 30px;
+        margin: 15px 0px 10px -50px;
     }
 
 }
@@ -106,10 +106,11 @@ body {
     .navabr {
         width: 90vh;
     }
+    
 }
 @media only screen and (max-width: 350px) {
     .navabr {
-        width: 94vh;
+        width: 93vh;
     }
 
 }
@@ -118,4 +119,3 @@ body {
         width: 95vh;
     }
 }
-
