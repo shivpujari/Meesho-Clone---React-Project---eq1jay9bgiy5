@@ -73,14 +73,13 @@
         width: 100%;
         grid-template-columns: auto auto auto;
         margin-left: 110px;
-
     }
     
     .compcard{
         width: 200px;
         margin: 5px;
-       
     }
+
     .compcard .titleOfItem{
         font-size: 15px;
     }
@@ -93,19 +92,19 @@
 
     }
 }
-@media only screen and (max-width: 400px) {
-    .productsContains{
-        margin-left: 190px;
-    }
+@media only screen and (max-width: 300px) {
+  .productsContains{
+    margin: 0px 0px 0px 179px;
+  }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 500px) {
     .productsContains{
         margin-left: 75px;
     }
 }
 
-@media only screen and (max-width: 350px) {
-    .productsContains{
-        margin-left: 140px;
-    }
-}
+
+
+
+
