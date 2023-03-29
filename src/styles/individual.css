@@ -3,7 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navIndividual{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    border: 1px solid grey;
+}
+.navIndividual h1 {
+    font-size: 40px;
+    color: rgb(244, 51, 151);
+    margin: 15px 0px 0px 110px;
 
+}
+.navIndividual a p{
+    display: none;
+   
+}
+.navIndividual input {
+    height: 47px;
+    width: 30%;
+    margin: 16px 0px 0px 16px;
+}
+
+
+.navIndividual a {
+    color: black;
+    margin: 28px 10px 0px 28px;
+    text-decoration: none;
+}
+.profilIc{
+    font-size: 27px;
+    margin: 18px 23px 0px 30px;
+}
+.crtIc{
+    font-size: 25px;
+    margin: 24px 15px 0px 25px;
+}
+ .crtIc .crtpra{
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+.logBtn {
+    height: 40px;
+    width: 5%;
+    margin: 20px 0px 0px 10px;
+    background-color: rgb(244, 51, 151);
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
 .containsTwoDiv {
     display: flex;
     height: 100vh;
@@ -95,4 +145,90 @@
 
 .itemDesc span {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+     .navIndividual{
+        width: 100%;
+
+     }
+     .navIndividual h1{
+        font-size: 27px;
+        margin: 20px 0px 0px 15px;
+     }
+     .navIndividual input{
+        height: 40px;
+        width: 40%;
+        margin: 20px 0px 0px 9px;
+     }
+     .profilIc{
+        font-size: 20px;
+        margin: 20px 0px 0px -50px;
+     }
+     .crtIc{
+        font-size: 22px;
+        margin: 20px 5px 0px 5px;
+     }
+     .navIndividual .crtpra{
+        font-size: 12px;
+        margin: 0px 0px 0px 0px;
+     }
+     .logBtn{
+        width: 10%;
+        font-size: 11px;
+     }
+    .imgDiv{
+        height: 300px;
+       width: 50%;
+        margin: 20px 5px 0px 10px;
+    }
+    .imgTwo{
+        height: 250px;
+        width: 50%;
+        margin: 0px 5px 0px 10px;
+    }
+    .allbtn{
+        height: 300px;
+       margin: 20px 10px 0px 5px;
+    }
+    .ratingBtn{
+        height: 24px;
+        width: 15%;
+        font-size: 11px;
+        margin: 4px 0px 4px 5px;
+    }
+    
+    .allbtn h4{
+        font-size: 12px;
+        margin: 8px 0px 0px 5px;
+    }
+    .allbtn h5{
+        margin: -15px 0px 0px 5px ;
+    }
+    .allbtn .buyNOw{
+        height: 30px;
+        width: 20%;
+        font-size: 11px;
+        margin: 3px;
+    }
+    .deleteIems{
+        height: 30px;
+        width: 19%;
+        font-size: 11px;
+        margin: 0;
+
+    }
+    .itemDesc{
+        margin: 4px 4px -8px 4px;
+        font-size: 12px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .itemDesc{
+        margin: 4px 4px -8px 4px;
+        font-size: 10px;
+    }
 }
