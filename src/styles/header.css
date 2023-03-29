@@ -109,6 +109,13 @@ body {
 }
 @media only screen and (max-width: 350px) {
     .navabr {
-        width: 99vh;
+        width: 94vh;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+    .navabr {
+        width: 95vh;
     }
 }
+
