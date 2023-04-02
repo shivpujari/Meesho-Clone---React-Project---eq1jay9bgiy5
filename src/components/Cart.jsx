@@ -1,13 +1,14 @@
 import React, { createContext } from 'react'
-import Header from './Header'
 import '../styles/individual.css'
 import { DataAppContext } from './DataApp';
 import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom'
+import CartDisply from './CartDisplay'
 
 function Cart() {
+    let name = localStorage.getItem("name")
     const cartData = useContext(DataAppContext);
     const navigate = useNavigate();
 
@@ -24,10 +25,26 @@ function Cart() {
         tempArr.splice(index, 1);
         cartData.setDataApp([...tempArr]);
     }
+  
+
+    const logoutBtn = () => {
+      localStorage.removeItem("loginStatus")
+      localStorage.removeItem("name", name)
+    }
 
     return (
         <div>
-            <Header />
+          <nav className="navIndividual">
+          <h1>meesho</h1>
+          <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
+          <a href=''><p>Download App</p></a>
+          <a href=''><p>Become a Supplier</p></a>
+          <i className="fa fa-user profilIc"><p className='profilepara'>Profile</p><p className='userName'>{name}</p></i>
+          <button className='cartButtton'>
+            <i className="fa fa-shopping-cart crtIc"></i>
+            <Link className='crtpra' to="/cartdisplay">Cart{cartData.dataApp.length}</Link></button>
+          <button className='logBtn' onClick={logoutBtn}>Logout</button>
+          </nav>
             <div>
                 {cartData.dataApp.map((item, index) => (
                     <div className="card-content">

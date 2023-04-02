@@ -18,8 +18,8 @@ function Header() {
       <nav className="navabr">
         <h1>meesho</h1>
         <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
-        <a href=''>Download App</a>
-        <a href=''>Become a Supplier</a>
+        <a href=''><p>Download App</p></a>
+        <a href=''><p>Become a Supplier</p></a>
         <i className="fa fa-user profileIcon"><p className='profilepara'>Profile</p><p className='userName'>{name}</p></i>
         <button className='cartButtton'>
           <i className="fa fa-shopping-cart cartIcon"></i>

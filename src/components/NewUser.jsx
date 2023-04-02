@@ -49,12 +49,11 @@ alert("Registered successfully")
   return (
     <div>
     <nav className="navbar">
-    <h1>meesho</h1>
-    <input type="text"  placeholder=' Try Saree, Kurti or Search by Product Code '/>
-   <a href=''>Download App</a> 
-   <a href=''>Become a Supplier</a>  
-   
-    </nav>
+        <h1>meesho</h1>
+        <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
+        <a href=''>Download App</a>
+        <a href=''>Become a Supplier</a>
+      </nav>
     <div className='contains'>
     <div className='formDiv'>
     <label htmlFor='name'>Name</label>

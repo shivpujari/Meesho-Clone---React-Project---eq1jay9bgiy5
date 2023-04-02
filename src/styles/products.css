@@ -78,8 +78,8 @@
     .compcard{
         width: 200px;
         margin: 5px;
-       
     }
+
     .compcard .titleOfItem{
         font-size: 15px;
     }
@@ -92,8 +92,19 @@
 
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
+  .productsContains{
+    margin: 0px 0px 0px 179px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
     .productsContains{
-        margin-left: 190px;
+        margin-left: 75px;
     }
 }
+
+
+
+
+
