@@ -11,6 +11,7 @@ function Header() {
   const logoutBtn = () => {
     localStorage.removeItem("loginStatus")
     localStorage.removeItem("name", name)
+    
   }
 
   return (
@@ -26,6 +27,19 @@ function Header() {
           <Link className='cartpara' to="/cartdisplay">Cart{cartData.dataApp.length}</Link></button>
         <button className='logoutBtn' onClick={logoutBtn}>Logout</button>
       </nav>
+      <div className='divAfterNavs'>
+      <a href=""> Women Ethnic
+      Women Western
+      Men
+      Kids
+      Home & Kitchen
+      Beauty & Health
+      Jewellery & Accessories
+      Bags & Footwear
+      Electronics</a>
+
+
+      </div>
     </div>
   )
 }
