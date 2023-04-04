@@ -14,7 +14,8 @@ body {
     height: 80px;
     width: 100%;
     display: flex;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 5px 5px 5px rgb(180, 174, 174);
 }
 
 .navabr h1 {
@@ -90,11 +91,78 @@ body {
 .divAfterNavs a{
    margin: 20px 0px 0px 140px;
     text-decoration: none;
-    /* text-align: center; */
     color: black;
-
- 
 }
+.lowestPrice{
+    height: 450px;
+    width: 100%;
+    display: flex;
+}
+.lowestPrice h1{
+    font-size: 38px;
+    margin: 40px 80px 0px 50px;
+}
+.lowestPrice button{
+    height: 50px;
+    width: 69%;
+    border: 0;
+    background-color:  rgb(244, 51, 151) ;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  margin: 10px 0px 0px 60px;
+}
+.delivery{
+    height: 60px;
+    display: flex;
+    width: 90%;
+    margin: 10px 0px 0px 20px;
+    font-size: 13px;
+    background-color: #fff;
+    
+}
+.lowestLeft{
+    height: 350px;
+    width: 35%;
+    margin: 30px 0px 0px 220px;
+    background-color: #fff8f8;
+
+
+}
+
+.deliveyIcon{
+    height: 40px;
+    width: 40px;
+}
+.cod{
+    height: 40px;
+    width: 40px;
+}
+.easy{
+    height: 40px;
+    width: 40px;
+}
+.lowestRight{
+    height: 200px;
+    width: 28%;
+    margin: 100px 0px 0px 0px;
+
+}
+.lowestRight img{
+    height: 250px;
+    width: 100%;
+}
+
+.proforyou{
+    height: 70px;
+    width: 100%;
+    /* background-color: blue; */
+}
+.proforyou h1{
+    margin: 0px 0px 0px 100px;
+}
+
 @media only screen and (max-width: 600px) {
     .navabr {
         width: 95vh;

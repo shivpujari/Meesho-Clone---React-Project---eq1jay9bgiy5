@@ -3,6 +3,11 @@ import '../styles/header.css'
 import { Link } from 'react-router-dom'
 import { DataAppContext } from './DataApp'
 import { useContext } from 'react';
+import delivery from '../Images/freeDelivery.svg'
+import cod from '../Images/cod.svg'
+import easy from '../Images/easyReturns.svg'
+import allImg from '../Images/allImage.jpg'
+
 
 function Header() {
   const cartData = useContext(DataAppContext);
@@ -28,16 +33,35 @@ function Header() {
         <button className='logoutBtn' onClick={logoutBtn}>Logout</button>
       </nav>
       <div className='divAfterNavs'>
-      <a href=""> Women Ethnic
-      Women Western
-      Men
-      Kids
-      Home & Kitchen
-      Beauty & Health
-      Jewellery & Accessories
-      Bags & Footwear
-      Electronics</a>
+      <a href=""> Women Ethnic Women Western Men Kids Home & Kitchen Beauty & Health Jewellery & Accessories Bags & Footwear Electronics</a>
+      </div>
+      <div className='lowestPrice'>
+      <div className='lowestLeft'>
+      <h1>Lowest Prices
+      Best Quality Shopping</h1>
+      <div className='delivery'>
+      <div>
+      <img className='deliveyIcon' src={delivery}/>
+      Free Delivery
+      </div>
+      <div>
+      <img className='cod' src={cod}/>
+      Cash on Delivery
+      </div>
+      <div>
+      <img className='easy' src={easy}/>
+      Easy Returns
+      </div>
+      </div>
+      <button>Download the Meesho App</button>
+      </div>
+      <div className="lowestRight">
+        <img src={allImg}/>
+      </div>
 
+      </div>
+      <div className='proforyou'>
+      <h1>Products For You</h1>
 
       </div>
     </div>
