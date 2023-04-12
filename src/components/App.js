@@ -8,12 +8,13 @@ import Login from './Login';
 import CartDisplay from './CartDisplay';
 import DataApp from './DataApp';
 import Payment from './Payment';
+import Footer from './Footer';
 
 const App = () => {
 
   return (
     <div id="main">
-      <DataApp>
+      { <DataApp>
         {<BrowserRouter>
           <Routes>
             <Route path="/" element={<Products />} />
@@ -24,7 +25,10 @@ const App = () => {
             <Route path="/payment" element={<Payment />} />
           </Routes>
         </BrowserRouter>}
-      </DataApp>
+        </DataApp>}
+       
+
+
     </div>
   )
 }

@@ -1,0 +1,77 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ .Main-footer {
+     height: 410px;
+     width: 100%;
+     background-color: #F9F9F9;
+     border: 0.1px solid rgb(220, 213, 213);
+ }
+
+ .shopNonStop {
+     display: flex;
+     height: 400px;
+     width: 100%;
+ }
+
+ .footerFirst {
+     height: 400px;
+     width: 40%;
+ }
+
+ .footerFirst h1 {
+     margin: 50px 50px 20px 90px;
+ }
+
+ .footerFirst p {
+     margin: 0px 120px 20px 90px;
+     color: rgb(100, 99, 99);
+ }
+
+ .footerFirst .imgfir {
+     height: 40px;
+     width: 150px;
+     margin: 0px 0px 10px 90px;
+ }
+ .footerFirst .imgsec {
+    height: 40px;
+    width: 150px;
+    margin: 0px 0px 10px 10px;
+}
+ .footerSecond {
+     height: 400px;
+     width: 30%;
+ }
+ .containsp{
+    margin-top: 56px;
+ }
+
+ .containsp p{
+    color: rgb(100, 99, 99);
+    font-weight: 600;
+    margin: 20px 0px 0px 0px;
+ }
+
+ .footerthird{
+    height: 400px;
+    width: 30%;
+ }
+ .upperFoot{
+    height: 200px;
+    width: 100%;
+ }
+
+ .upperFoot h2{
+    margin: 50px 50px 20px 0px;
+ }
+ .upperFoot img{
+    margin: 0px 20px 0px 0px;
+
+ }
+ .upperFoot p{
+    font-size: 14px;
+    color: rgb(100, 99, 99) ;
+ }
