@@ -43,7 +43,7 @@ function IndividualProduct() {
 
     return (
         <div>
-            <Header />
+            <Header/>
             <div>
                 {cart.length > 0 && cart.map((item, index) => (
                     <div className="card-content">

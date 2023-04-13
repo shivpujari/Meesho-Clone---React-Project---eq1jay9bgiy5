@@ -6,18 +6,15 @@ import { Link, useNavigate } from 'react-router-dom'
 import { DataAppContext } from './DataApp';
 import Footer from './Footer';
 
-
-
 const api = `https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products`
 
 function Products() {
 
   const cartData = useContext(DataAppContext);
+  const { data, setData } = cartData;
   const navigate = useNavigate();
 
-  const [data, setData] = useState([]);
-
- const getData = () => {
+  const getData = () => {
     fetch(api)
       .then((response) => {
         return response.json();
@@ -34,27 +31,15 @@ function Products() {
 
   const handleClick = (item) => {
     if (!localStorage.getItem("loginStatus")) {
-      alert("You Must Login First")
-      navigate("/login")
     }
     cartData.setDataApp([...cartData.dataApp, item])
+    alert("Added Item to cart Successfully")
   }
-  // const searchInput = (e) => {
-  //   setData(e.target.value)
-  //   console.log('searchinput - ', e.target.value)
-  //   const res = data.filter((item) => {
-  //     return item.title.toLowerCase().includes(e.target.value)
-  //   })
-  //   setData(res)
-  // }
 
   return (
     <div>
       <Header />
-      
-
       <div className='productsContains' >
-
         {data.map((item) => (
           <div className='compcard'>
             <Link to={`/individualproduct/${item.id}`} className="cartt">
@@ -69,7 +54,7 @@ function Products() {
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -7,28 +7,24 @@ import delivery from '../Images/freeDelivery.svg'
 import cod from '../Images/cod.svg'
 import easy from '../Images/easyReturns.svg'
 import allImg from '../Images/allImage.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 function Header() {
-
-  const api = `https://content.newtonschool.co/v1/pr/63b6c911af4f30335b4b3b89/products`
-  
- 
-
   const cartData = useContext(DataAppContext);
   const { data, setData } = cartData;
   let name = localStorage.getItem("name")
-  // const [qeury, setQuery] = useState();
-
-
+ console.log(data, "data in header");
+ const navigate = useNavigate();
 
   const logoutBtn = () => {
     localStorage.removeItem("loginStatus")
     localStorage.removeItem("name", name)
+    alert("Logout Successfully")
+    navigate("/")
   }
 
   const searchInput = (e) => {
-    setData(e.target.value)
     console.log('searchinput - ', e.target.value)
     const res = data.filter((item) => {
       return item.title.toLowerCase().includes(e.target.value)
@@ -36,15 +32,17 @@ function Header() {
     setData(res)
   }
 
+  useEffect(()=>{
+    console.log(data, "data");
+  })
+
+
   return (
     <div>
       <nav className="navabr">
         <h1>meesho</h1>
         <input type="text" onChange={searchInput}  placeholder=' Try Saree, Kurti or Search by Product Code ' />
-        {data.map((hid)=>(
-          <p></p>
-  ))}
-        <a href=''><p>Download App</p></a>
+        <a href='https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow'><p>Download App</p></a>
         <a href=''><p>Become a Supplier</p></a>
         <i className="fa fa-user profileIcon"><p className='profilepara'>Profile</p><p className='userName'>{name}</p></i>
         <button className='cartButtton'>
@@ -52,9 +50,10 @@ function Header() {
           <Link className='cartpara' to="/cartdisplay">Cart{cartData.dataApp.length}</Link></button>
         <button className='logoutBtn' onClick={logoutBtn}>Logout</button>
       </nav>
-      <div className='divAfterNavs'>
-        <a href=""> Women Ethnic Women Western Men Kids Home & Kitchen Beauty & Health Jewellery & Accessories Bags & Footwear Electronics</a>
-      </div>
+      
+      <div className='hidingDiv'></div>
+
+
       <div className='lowestPrice'>
         <div className='lowestLeft'>
           <h1>Lowest Prices
@@ -73,7 +72,9 @@ function Header() {
               Easy Returns
             </div>
           </div>
-          <button>Download the Meesho App</button>
+          <button>
+          <a href='https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow'>
+          Download the Meesho App </a></button>
         </div>
         <div className="lowestRight">
           <img src={allImg} />

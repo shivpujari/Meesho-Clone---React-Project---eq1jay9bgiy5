@@ -107,11 +107,16 @@ body {
     width: 69%;
     border: 0;
     background-color:  rgb(244, 51, 151) ;
-    color: #fff;
     border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
   margin: 10px 0px 0px 60px;
+
+}
+.lowestPrice button a{
+    color: #fff;
+  text-decoration: none;
+
 }
 .delivery{
     height: 60px;
@@ -157,7 +162,6 @@ body {
 .proforyou{
     height: 70px;
     width: 100%;
-    /* background-color: blue; */
 }
 .proforyou h1{
     margin: 0px 0px 0px 100px;
@@ -185,6 +189,10 @@ body {
         font-size: 23px;
         margin: 15px 0px 10px -50px;
     }
+    .hidingDiv{
+        display: none;
+    }
+    
 
 
 .divAfterNavs{

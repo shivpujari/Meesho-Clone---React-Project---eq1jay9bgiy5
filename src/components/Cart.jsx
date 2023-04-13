@@ -5,13 +5,12 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom'
-import CartDisply from './CartDisplay'
+import CartEmpty from './CartEmpty';
 
 function Cart() {
     let name = localStorage.getItem("name")
     const cartData = useContext(DataAppContext);
     const navigate = useNavigate();
-
 
     useEffect(() => {
         if (!localStorage.getItem("loginStatus")) {
@@ -30,11 +29,15 @@ function Cart() {
     const logoutBtn = () => {
       localStorage.removeItem("loginStatus")
       localStorage.removeItem("name", name)
+      alert("Logout Successfully")
+      navigate("/")
     }
 
     return (
         <div>
-          <nav className="navIndividual">
+        { cartData.dataApp.length > 0 ? 
+            <div>
+            <nav className="navIndividual">
           <h1>meesho</h1>
           <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
           <a href=''><p>Download App</p></a>
@@ -65,6 +68,10 @@ function Cart() {
                     </div>
                 ))}
             </div>
+            </div> : <CartEmpty/>
+
+        }
+          
         </div>
 
     )

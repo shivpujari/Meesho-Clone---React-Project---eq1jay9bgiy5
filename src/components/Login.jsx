@@ -18,7 +18,7 @@ const Signin = () => {
 
 
     if (!email) {
-      return alert("email is required")
+      return alert("Email is required")
     } else {
       if (!email.match(emailPattern)) {
         setCredential(true);
@@ -29,12 +29,11 @@ const Signin = () => {
       }
     }
     if (!password) {
-      return alert("password is required")
+      return alert("Password is required")
     } else {
       if (!password.match(passwordPatern)) {
         setCredential(true);
-        console.log(credential, "firstcredential")
-        alert("Invalid password")
+        alert("Invalid Password")
       } else {
         setCredential(false)
         localStorage.setItem("password", password)
@@ -42,21 +41,18 @@ const Signin = () => {
     }
 
     if (!credential) {
-      console.log(credential, "credential")
       if (email === localStorage.getItem("email") && password === localStorage.getItem("password")) {
-        alert("successfully login")
+        alert("Login Successfully")
 
         localStorage.setItem("loginStatus", true)
         if (locationP.state) {
-          console.log("loginlocation")
           navigate(`/individualproduct/${locationP.state.id}`)
         } else {
           navigate("/")
         }
       } else {
-        alert("Invalied credentials")
+        alert("Invalid Credentials")
       }
-
     }
   }
 
@@ -66,7 +62,7 @@ const Signin = () => {
       <nav className="navbar">
         <h1>meesho</h1>
         <input type="text" placeholder=' Try Saree, Kurti or Search by Product Code ' />
-        <a href=''>Download App</a>
+        <a href='https://play.google.com/store/apps/details?id=com.meesho.supply&pid=pow_website&c=pow'>Download App</a>
         <a href=''>Become a Supplier</a>
       </nav>
       <div className='contains'>
@@ -74,7 +70,7 @@ const Signin = () => {
           <label htmlFor="Name">Email or phone number</label><br></br>
           <input type="text" placeholder="Enter Email" onChange={e => setEmail(e.target.value)} value={email} id="username" className="form" />
           <label htmlFor="Name">Password (6 or more characters)</label><br></br>
-          <input type="password" placeholder="Enter Password" id="password" className="form" value={password} onChange={e => setPassword(e.target.value)} />
+          <input type="password" placeholder="Ex: Abc@98" id="password" className="form" value={password} onChange={e => setPassword(e.target.value)} />
 
           <div className='rows'>
             <button onClick={loginForm} className="button1">Login</button>
